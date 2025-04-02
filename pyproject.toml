@@ -1,0 +1,11 @@
+[project]
+name = "flowmind"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "bs4>=0.0.2",
+    "mcp[cli]>=1.6.0",
+]
