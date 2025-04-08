@@ -1,8 +1,7 @@
 # FlowMind
 
-[![FlowMind Demo](https://img.shields.io/badge/Demo-YouTube-red)](https://youtu.be/JNRCuF2ihz4?si=ZfjErAQkJG-eIIeg)
+[![FlowMind Demo](https://img.shields.io/badge/Demo-YouTube-red)](https://youtu.be/EHca03gn3Z0?si=IhtJUZpAiebwvvr9)
 
-<iframe width="560" height="315" src="https://youtu.be/EHca03gn3Z0?si=xl04feONjfIXb0be" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 场景描述 | Scenario Description
 
@@ -39,37 +38,5 @@ FlowMind is a toolkit for managing assets on the Flow blockchain. It helps users
 1. 克隆此仓库到本地 | Clone this repository to your local machine:
    ```bash
    git clone <repository-url>
-   ```
-2. 安装依赖：
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. 运行程序：
-   ```bash
-   python flowmind.py
-   ```
 
-## 贡献
-欢迎贡献代码！请提交 Pull Request 或报告 Issue。
-
-## 许可证
-本项目采用 MIT 许可证。
-
-## MCP 配置
-
-以下是 FlowMind 项目的 MCP 配置示例：
-
-```json
-{
-  "mcpServers": {
-    "hello": {
-      "command": "bash",
-      "args": [
-        "-c",
-        " uv --directory /Volumes/extdisk/project/ run flowmind.py"
-      ]
-    }
-  },
-  "globalShortcut": ""
-}
-```
+   安装依赖 | Install dependencies:bash运行3. 运行程序 | Run the program:bash运行贡献 | Contribution欢迎贡献代码！请提交 Pull Request 或报告 Issue。Contributions are welcome! Please submit Pull Requests or report Issues.许可证 | License本项目采用 MIT 许可证。This project is licensed under the MIT License.MCP 配置 | MCP Configuration以下是 FlowMind 项目的 MCP 配置示例：Below is an example MCP configuration for the FlowMind project:json,收起代码
