@@ -1,51 +1,42 @@
 # FlowMind
 
-FlowMind 是一个功能强大的 Flow 区块链浏览器和分析工具，提供钱包浏览、NFT 分析和 DeFi 投资组合管理功能。它帮助用户全面了解他们在 Flow 区块链上的资产状况、NFT 收藏品和 DeFi 投资。
+[![FlowMind Demo](https://img.shields.io/badge/Demo-YouTube-red)](https://youtu.be/JNRCuF2ihz4?si=ZfjErAQkJG-eIIeg)
 
-## 功能概述
+<iframe width="560" height="315" src="https://youtu.be/EHca03gn3Z0?si=xl04feONjfIXb0be" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-FlowMind 提供三大核心功能模块：
+## 场景描述 | Scenario Description
 
-### 1. 钱包浏览功能
+FlowMind 是一个用于管理 Flow 区块链资产的工具集。它可以帮助用户查询 Flow 区块链上的账户信息、交易历史和最新区块信息。该工具集适用于金融资产管理平台，用户可以通过平台查看他们的账户余额、交易历史，并获取最新的区块信息。
 
-- **账户信息查询**：获取账户余额、密钥数量和合约数量
-- **交易历史查询**：查看账户的交易记录，包括交易ID、日期、类型和状态
-- **最新区块信息**：获取 Flow 区块链上最新已密封区块的信息
-- **钱包仪表盘**：生成综合性钱包仪表盘，包含账户信息、交易历史和网络状态
-- **账户活动监控**：实时监控账户活动，检测新交易
+FlowMind is a toolkit for managing assets on the Flow blockchain. It helps users query account information, transaction history, and the latest block information on the Flow blockchain. This toolkit is suitable for financial asset management platforms, allowing users to view their account balances, transaction histories, and obtain the latest block information.
 
-### 2. NFT 浏览功能
+## 功能说明 | Features
 
-- **NFT 集合信息**：查询 NFT 合约信息，包括名称、总供应量、持有者数量等
-- **NFT 元数据查询**：获取单个 NFT 的详细元数据
-- **所有权历史追踪**：追踪 NFT 的所有权变更历史
-- **NFT 集合统计分析**：分析 NFT 集合的市场表现，包括地板价、交易量和持有者分布
-- **NFT 仪表盘**：生成 NFT 集合或单个 NFT 的综合仪表盘
+### 主要功能 | Main Features
 
-### 3. DeFi 分析功能
+1. **账户信息查询 | Account Information Query**
+   - 使用 `get_flow_account_info` 函数获取用户账户的基本信息，包括余额、密钥数量和合约数量。
+   - Use the `get_flow_account_info` function to get basic information about user accounts, including balance, number of keys, and number of contracts.
 
-- **DeFi 协议信息**：查询 DeFi 协议的基本信息和性能指标
-- **流动性池分析**：获取 DeFi 协议的流动性池信息
-- **投资组合分析**：分析用户在各 DeFi 协议中的资产分配和收益情况
-- **代币价格历史**：查询代币价格历史数据和趋势分析
-- **DeFi 仪表盘**：生成 DeFi 协议或用户投资组合的综合仪表盘
-- **协议比较**：比较多个 DeFi 协议的性能和特点
+2. **交易历史查询 | Transaction History Query**
+   - 使用 `get_account_transactions` 函数获取用户账户的交易历史，显示交易ID、日期、类型和状态。
+   - Use the `get_account_transactions` function to get the transaction history of user accounts, displaying transaction ID, date, type, and status.
 
-## 技术实现
+3. **最新区块信息 | Latest Block Information**
+   - 使用 `get_latest_sealed_block` 函数获取 Flow 区块链上最新已密封区块的信息，如区块ID、高度和时间戳。
+   - Use the `get_latest_sealed_block` function to get information about the latest sealed block on the Flow blockchain, such as block ID, height, and timestamp.
 
-FlowMind 基于以下技术构建：
+### 程序说明 | Program Description
 
-- **FastMCP 框架**：提供工具函数注册和调用能力
-- **Flow HTTP API**：获取区块链基础数据
-- **Flowscan API**：获取交易历史和扩展数据
-- **异步请求处理**：使用 `httpx` 和 `asyncio` 实现高效的异步请求
-- **数据可视化**：提供结构化数据用于仪表盘展示
+- **异步请求处理 | Asynchronous Request Processing**：通过 `make_async_flow_api_request` 函数处理所有与 Flow API 的异步请求，确保请求的可靠性和错误处理。
+  - Process all asynchronous requests to the Flow API through the `make_async_flow_api_request` function, ensuring request reliability and error handling.
+  
+- **工具函数 | Tool Functions**：程序中定义了一系列工具函数，使用 `@mcp.tool()` 装饰器注册，方便在 MCP 环境中调用。
+  - The program defines a series of tool functions, registered using the `@mcp.tool()` decorator, making them easy to call in the MCP environment.
 
-## 使用方法
+## 使用方法 | Usage
 
-### 安装
-
-1. 克隆此仓库到本地：
+1. 克隆此仓库到本地 | Clone this repository to your local machine:
    ```bash
    git clone <repository-url>
    ```
