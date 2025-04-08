@@ -1,7 +1,10 @@
 # FlowMind
 
 [![FlowMind Demo](https://img.shields.io/badge/Demo-YouTube-red)](https://youtu.be/EHca03gn3Z0?si=IhtJUZpAiebwvvr9)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EHca03gn3Z0?si=RqgOfgbILbSz8bys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**[观看演示视频 | Watch Demo Video](https://youtu.be/EHca03gn3Z0?si=IhtJUZpAiebwvvr9)**
+
+![FlowMind Demo](https://img.youtube.com/vi/EHca03gn3Z0/0.jpg)
 
 ## 场景描述 | Scenario Description
 
