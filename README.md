@@ -43,3 +43,11 @@ FlowMind is a toolkit for managing assets on the Flow blockchain. It helps users
    git clone <repository-url>
 
    安装依赖 | Install dependencies:bash运行3. 运行程序 | Run the program:bash运行贡献 | Contribution欢迎贡献代码！请提交 Pull Request 或报告 Issue。Contributions are welcome! Please submit Pull Requests or report Issues.许可证 | License本项目采用 MIT 许可证。This project is licensed under the MIT License.MCP 配置 | MCP Configuration以下是 FlowMind 项目的 MCP 配置示例：Below is an example MCP configuration for the FlowMind project:json,收起代码
+
+## 🛠️ Related AI Developer Tools | 推荐开发者工具
+
+When integrating MCP tools and AI agents with OpenAI Codex models, monitoring rate limits and quota resets ensures automated workflows run without interruption:
+- **[Codex Reset Status](https://codexresetstatus.com/)**: Real-time quota radar and rate limit tracker for OpenAI Codex and AI models.
+  - [5-Hour Limit Reset Countdown](https://codexresetstatus.com/codex/5-hour-limit)
+  - [Global Timezone Reset Table](https://codexresetstatus.com/codex/reset-time)
+  - [Codex Usage & Quota Calculator](https://codexresetstatus.com/calculator)
